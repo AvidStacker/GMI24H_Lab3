@@ -31,3 +31,14 @@ def gcd(a, b):
 
 def gcd_three(a, b, c):
     return gcd(gcd(a, b), c)
+
+def lcm(a, b):
+
+    multiple = max(a, b)
+    while True:
+        if multiple % a == 0 and multiple % b == 0:
+            return multiple
+        multiple += 1
+
+
+print("LCM of 4 and 6 is:", lcm(4, 6)) 
