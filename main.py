@@ -12,7 +12,6 @@ process.
 3. Write a Python function to check whether a given number n is prime or
 not using an efficient approach
 """
-
 def is_prime(n):
     if n <= 1:
         return False
@@ -23,3 +22,12 @@ def is_prime(n):
 
 print(is_prime(2))   # Output: True
 print(is_prime(4))  # Output: False
+
+
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+def gcd_three(a, b, c):
+    return gcd(gcd(a, b), c)
