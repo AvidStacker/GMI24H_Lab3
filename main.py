@@ -20,8 +20,8 @@ def is_prime(n):
             return False
     return True
 
-print(is_prime(2))   # Output: True
-print(is_prime(4))  # Output: False
+print(is_prime(2))   # True
+print(is_prime(4))   # False
 
 
 def gcd(a, b):
@@ -33,12 +33,13 @@ def gcd_three(a, b, c):
     return gcd(gcd(a, b), c)
 
 def lcm(a, b):
-
     multiple = max(a, b)
     while True:
         if multiple % a == 0 and multiple % b == 0:
             return multiple
         multiple += 1
 
-
-print("LCM of 4 and 6 is:", lcm(4, 6)) 
+# Testanrop som rekommenderas i feedbacken
+print("GCD of 12 and 18 is:", gcd(12, 18))               # 6
+print("GCD of 15, 25, and 35 is:", gcd_three(15, 25, 35))  # 5
+print("LCM of 4 and 6 is:", lcm(4, 6))                   # 12
